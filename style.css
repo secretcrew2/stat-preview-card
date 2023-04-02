@@ -50,7 +50,7 @@ body{
     line-height: 2em;
 }
 #description-text{
-    margin: 1.5em 0 2em 0;
+    margin: 2em 0;
     font-size: 0.75em;
 }
 .information-section{
@@ -90,6 +90,7 @@ body{
     .information-section{
         flex-direction: row;
         gap: 2.5em;
+        margin-top: 4vw;
     }
     /* .container > div {
         flex :1;
@@ -97,6 +98,6 @@ body{
     .bottom-section{
         text-align: start;
         margin: auto;
-        padding: 5% 10% 5% 5%;
+        padding: 3vw 6vw 3vw 3vw;
     }
 }
