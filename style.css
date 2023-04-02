@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+}
+.container{
+    margin: 20px;
+    text-align: center;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.top-section {
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .top-section img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+  }
+.bottom-section{
+    padding: 30px;
+}
+.bottom-section h2{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.75em;
+}
+.bottom-section p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.75em;
+    font-weight: 400 ;
+    /* padding: 0 10px; */
+    line-height: 2em;
+}
+#description-text{
+    margin: 1.5em 0 2em 0;
+    font-size: 0.75em;
+}
+.information-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+.information-section p {
+    text-transform: uppercase;
+}
+.information-section h2 {
+    font-size: 1em;
+}
+.text-low {
+    color: hsla(0, 0%, 100%, 0.6);
+    opacity: 0.9;
+}
+.container > *{
+    color: white;
+}
+#word-insights{
+    color: blueviolet;
+}
+
+@media (min-width: 576px){
+    .body{
+        justify-content: center;
+    }
+    .container{
+        flex-direction: row-reverse;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .top-section, .bottom-section{
+        flex-basis: 50%;
+    }
+    .information-section{
+        flex-direction: row;
+        gap: 2.5em;
+    }
+    /* .container > div {
+        flex :1;
+    } */
+    .bottom-section{
+        text-align: start;
+        margin: auto;
+        padding: 5% 10% 5% 5%;
+    }
+}
